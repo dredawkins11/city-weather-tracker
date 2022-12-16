@@ -11,10 +11,10 @@ const citySearchForm = document.getElementById("city-search-form");
 
 // Set up URLs from all APIs used
 const CURRENT_BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
-const FORECAST_BASE_URL = "http://api.openweathermap.org/data/2.5/forecast";
-const GEO_BASE_URL = "http://api.openweathermap.org/geo/1.0/direct";
+const FORECAST_BASE_URL = "https://api.openweathermap.org/data/2.5/forecast";
+const GEO_BASE_URL = "https://api.openweathermap.org/geo/1.0/direct";
 const API_KEY = "db20d42d3280d7ded6b519ef08fd0069";
-const getIconUrl = (code) => `http://openweathermap.org/img/wn/${code}@2x.png`;
+const getIconUrl = (code) => `https://openweathermap.org/img/wn/${code}@2x.png`;
 
 // Fetch history from local storage
 let searchHistory = JSON.parse(localStorage.getItem("searchHistory"));
