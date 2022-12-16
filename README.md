@@ -4,3 +4,5 @@ This challenge has helped me solidify my skills using APIs and JavaScript workin
 
 **Deployed**
 https://dredawkins11.github.io/city-weather-tracker/
+
+![image](https://user-images.githubusercontent.com/63630450/208054439-2fbf9c40-06ad-4c69-a23c-f4f5069a3a90.png)
