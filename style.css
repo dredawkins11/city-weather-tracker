@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 header {
@@ -39,9 +39,9 @@ main {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    gap: 50px;
+    gap: 25px;
     height: 95vh;
-    padding: 50px;
+    padding: 25px;
 }
 
 h1 {
@@ -153,21 +153,32 @@ button {
 }
 
 .forecast-section {
+    flex: auto 1;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 10px;
     padding: 25px;
+    padding-top: 10px;
+}
+
+#forecast-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
 }
 
 .forecast-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 3rem;
     gap: 25px;
 }
 
-.forecast-item > p {
-    font-size: 4rem;
+.forecast-item > img {
+    aspect-ratio: 1/1;
+    width: 5rem;
 }
 
 .forecast-item h2 {
@@ -177,7 +188,8 @@ button {
 .forecast-item > div {
     display: flex;
     flex-direction: column;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    text-align: right;
 }
 
 .forecast-item span {

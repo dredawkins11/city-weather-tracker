@@ -114,7 +114,7 @@ const updateForecast = (data) => {
             "src",
             getIconUrl(data[i][3].weather[0].icon)
         );
-        forecastItemDiv.childNodes[1].innerHTML = data[i][3].dt_txt;
+        forecastItemDiv.childNodes[1].innerHTML = data[i][3].dt_txt.slice(0,10);
         forecastItemDiv.childNodes[2].childNodes[0].childNodes[1].innerText = `${Math.round(
             data[i][3].main.temp
         )}°F`;
@@ -131,7 +131,7 @@ const updateForecast = (data) => {
 
 // Add a recent search to the local storage
 const addToHistory = (search) => {
-    if (searchHistory.length >= 9) {
+    if (searchHistory.length >= 6) {
         searchHistory.shift()
     }
     searchHistory.push(search);
