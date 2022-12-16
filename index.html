@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>City Weather Tracker</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>Weather Dashboard</header>
+        <main>
+            <aside class="search-sidebar">
+                <h1>City Search</h1>
+                <form action="submit" id="city-search-form">
+                    <input type="text" name="city" placeholder="City..." />
+                    <button type="submit">Search</button>
+                </form>
+                <div id="search-history-container"></div>
+            </aside>
+            <section class="results-section">
+                <section class="current-weather-section">
+                    <h1>
+                        <span id="current-city">-</span>
+                        <img id="current-icon" src="#" alt="#">
+                    </h1>
+                    <div class="current-weather">
+                        <p>Temperature <span id="current-temp">-</span></p>
+                        <p>Wind Speeds <span id="current-wind">-</span></p>
+                        <p>Humidity <span id="current-hum">-</span></p>
+                    </div>
+                </section>
+                <section class="forecast-section">
+                    <h1>Forecast</h1>
+                    <div id="forecast-container">
+                        <!-- <div class="forecast-item">
+                            <p>☀️</p>
+                            <h2>December 16, 2022</h2>
+                            <div>
+                                <p>Temperature <span>90°F</span></p>
+                                <p>Wind Speeds <span>10 MPH</span></p>
+                                <p>Humidity <span>50%</span></p>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+            </section>
+        </main>
+        <script src="./index.js"></script>
+    </body>
+</html>
